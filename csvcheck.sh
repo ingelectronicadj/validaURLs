@@ -3,12 +3,7 @@ clear
 echo "Ejecutando Script para validación de URL's encontradas"
 sleep 1
 echo -e "Esto puede tomar un tiempo \n"
-if [ -d ./salida ]
-then
-	echo -e "La carpeta salida ya existe \n"
-else
-	mkdir salida
-fi
+mkdir -p salida
 
 while read url
 do
