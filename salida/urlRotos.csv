@@ -1,9 +1,0 @@
-http://not-exist.com/abc.html , 000
-https://kernel.org/nothing.html , 301
-http://kernel.org/index.html , 301
-https://kernel.org/index.html , 301
-https://www.unad.edu.co , 403
-http://www.unad.edu.co , 302
-https://www.unad.edu.co/noExisteSitio , 403
-http://inventandomeUnaURL.com , 000
-http://abs.bz , 301
