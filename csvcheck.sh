@@ -7,7 +7,7 @@ mkdir -p salida
 
 while read url
 do
-	urlstatus=$(curl -o /dev/null --silent --head --write-out '%{http_code}' "$url" )
+	urlstatus=$(curl -o /dev/null --silent -L --head --write-out '%{http_code}' "$url" )
 		echo "$url $urlstatus"
 		echo "$url , $urlstatus" >> salida/urlStatus.csv
 
