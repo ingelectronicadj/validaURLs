@@ -3,7 +3,7 @@ DIR='./salidas'
 OUT="$DIR/url-list.txt"
 
 mkdir -p $DIR
-REGEX='(http|https)://[a-zA-Z0-9./?=_-:]*'
+REGEX='(http|https)://[a-zA-Z0-9./?=_-:%]*'
 
 for file in "$@"
 do

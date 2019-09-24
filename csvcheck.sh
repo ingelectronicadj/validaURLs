@@ -3,7 +3,7 @@ clear
 echo "Ejecutando Script para validación de URL's encontradas"
 sleep 1
 echo -e "Esto puede tomar un tiempo \n"
-mkdir -p salida
+mkdir -p salidas
 
 while read url
 do
