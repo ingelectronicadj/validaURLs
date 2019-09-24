@@ -8,15 +8,13 @@ mkdir -p salida
 while read url
 do
 	urlstatus=$(curl -o /dev/null --silent -L --head --write-out '%{http_code}' "$url" )
-		echo "$url $urlstatus"
-		echo "$url , $urlstatus" >> salida/urlStatus.csv
 
 	case $urlstatus in
 		200)
-		echo "$url , $urlstatus" >> salida/urlBuenos.csv
+		echo "$url , $urlstatus" | tee -a salidas/urlBuenos.csv
 	;;
 		*)
-		echo "$url , $urlstatus" >> salida/urlRotos.csv
+		echo "$url , $urlstatus" | tee -a salidas/urlRotos.csv
 	;;
 	esac
 
