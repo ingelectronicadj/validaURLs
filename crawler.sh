@@ -1,9 +1,6 @@
 #!/bin/bash
-mkdir salidas
-while read file
-do
-	urlDetect=$(cat $file | grep -Eo "(http|https)://[a-zA-Z0-9./?=_-:]*" | uniq )
-		echo "$urlDetect"
-		echo "$urlDetect" >> salidas/urls-list.txt
-done < $1
+DIR='./salidas'
+mkdir -p $DIR
+REGEX='(http|https)://[a-zA-Z0-9./?=_-:]*'
+grep -Eo $REGEX $1 | uniq | tee -a "$DIR/urls-list.txt"
 
