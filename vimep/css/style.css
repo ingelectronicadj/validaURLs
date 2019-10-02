@@ -1,19 +1,123 @@
 body {
-    background-color: #d7e8ea;
-    /* display: flex;
-    flex-wrap:wrap; */
-}
-h1{color: #004669;
-    display:inline;
-}
-
-input[type=submit] {
-    padding:5px 15px; 
-    background:#ccc; 
-    border:0 none;
-    cursor:pointer;
-    -webkit-border-radius: 5px;
-    border-radius: 7px; 
+    color: #333;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
-.vimep{color:#D4A63E;display:inline;}
+header{
+    background: #FFF;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+header div.header {
+    margin: 0 auto;
+    max-width: 1060px;
+}
+
+header figure img {
+    width: 315px;
+}
+
+header div.moduleTop_der {
+    float: right;
+    height: 100px;
+    text-align: right;
+    width: 710px;
+}
+
+header div.moduleTop_izq {
+    float: left;
+    height: 100px;
+    width: 320px;
+}
+
+.caja1 {
+    border-right: 9px solid #F0B429;
+}
+
+.caja2 {
+    color: #ffffff;
+    font-size: 19px;
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(0,70,105,1) 100%);
+    margin: 25px 0 25px 0;
+    overflow: hidden;
+    padding: 10px;
+    border-right: 6px solid #F47920;
+}
+
+img {
+    border: 0;
+}
+
+div.page-header {
+    border-bottom: 2px solid;
+    color: #00476a;
+    display: block;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.headline {
+    text-align: center;
+}
+
+.BotonAzul {
+    background: #014D65;
+    border: 0;
+    color: #FFF;
+    display: block;
+    margin: 0 auto;
+    padding: 7px 12px;
+    width: 140px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.BotonAzul:hover {
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+    background: rgb(6, 109, 141);
+    width: 150px;
+}
+
+.footer img{
+    width: 100%;
+}
+
+.upload {
+    display: flex;
+    justify-content: center;
+}
+
+input,
+label {
+    margin: 2rem 0;
+}
+
+.container-centro p{
+    text-align: center;
+}
+
+.link { 
+    color: #014D65; 
+} 
+.link:hover { 
+    color: rgba(49, 138, 172, 1); 
+} 
